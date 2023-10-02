@@ -3,7 +3,7 @@ const {MongoClient} = require("mongodb");
 
 //const urlConexion = "mongodb+srv://user:1998@clase.pte5gu8.mongodb.net/";
 
-const urlConexion = process.env.Mongo_url;
+const urlConexion = process.env.URL_mongodb;
 
 function conectar(){
     return MongoClient.connect(urlConexion);
